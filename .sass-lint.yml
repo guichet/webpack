@@ -1,0 +1,67 @@
+options:
+  formatter: stylish
+files:
+  include:
+    - "assets/**/*.s+(a|c)ss"
+  ignore:
+    - "node_modules/**/*.s+(a|c)ss"
+rules:
+  extends-before-mixins: 2
+  extends-before-declarations: 2
+  placeholder-in-extend: 0
+  mixins-before-declarations:
+    - 2
+    -
+      exclude:
+        - breakpoint
+        - mq
+
+  no-warn: 1
+  no-debug: 1
+  no-ids: 2
+  no-important: 2
+  hex-length: 0
+  brace-style: 2
+  border-zero:
+    - 2
+    -
+      convention: '0'
+  space-after-comma: 2,
+  space-after-colon: 2,
+  space-around-operator: 2,
+  space-before-brace: 2,
+  space-before-colon:
+    - 0
+  space-between-parens: 2,
+  trailing-semicolon: 2,
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  indentation:
+    - 2
+    -
+      size: 4
+  no-css-comments: 0
+  property-sort-order:
+    - 1
+    -
+      order:
+        - display
+        - margin
+      ignore-custom-properties: true
+  variable-for-property: 0
+  final-newline: 0
+  quotes:
+    - 0
+  no-url-protocols: 0
+  single-line-per-selector: 0
+  leading-zero:
+    - 2
+    -
+      include: true
+  nesting-depth:
+    - 1
+    -
+      max-depth: 3
+  force-element-nesting: 0
