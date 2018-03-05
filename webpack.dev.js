@@ -67,7 +67,9 @@ module.exports = {
     },
     plugins: [
         new sassLintPlugin({
-            glob: 'src/**/*.s+(a|c)ss',
+            context: 'src',
+            glob: '**/*.s+(a|c)ss',
+            ignorePlugins: ['extract-text-webpack-plugin', 'html-webpack-plugin']
         }),
         new HtmlWebpackPlugin({
             template: './index.html',
